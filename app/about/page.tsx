@@ -6,7 +6,7 @@ export default function About() {
           <p className="paragrahB text-xl">
             Passionate traveler photographer capturing the world beauty
             through my lens. From breathtaking landscapes to candid moments, I
-            freeze time to tell compelling visual stories. Let's explore the
+            freeze time to tell compelling visual stories. Let explore the
             globe together, one click at a time
           </p>
           <p className="paragrahB text-sm">

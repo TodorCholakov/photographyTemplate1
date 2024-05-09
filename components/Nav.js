@@ -60,20 +60,17 @@ export default function Nav() {
         </NavbarContent>
   
         <NavbarMenu>
-          {menuItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
+          
+            <NavbarMenuItem>
               <Link
-                className="w-full"
-                color={
-                  index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
-                }
+               
                 href="#"
                 size="lg"
               >
-                {item}
+     Work
               </Link>
             </NavbarMenuItem>
-          ))}
+        
         </NavbarMenu>
       </Navbar>
     );
