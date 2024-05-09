@@ -49,7 +49,7 @@ const Portrait = () => {
             mi tempus imperdiet. Scelerisque felis imperdiet proin fermentum leo
             vel orci. Velit euismod in pellentesque massa placerat duis. Enim
             nunc faucibus a pellentesque sit amet porttitor eget. Volutpat
-            blandit aliquam etiam erat velit scelerisque in.
+            blandit aliquam etiam erat velit scelerisque in. 
           </p>
           <p className="text-xs mt-2">
             <i>Lorem ipsum dolor</i>
@@ -57,8 +57,8 @@ const Portrait = () => {
         </div>
         <div className="w-full flex justify-end m-2">
           <div className="">
-            <Link href="#"><div className="flex items-center ">
-              <span className="font-bold text-sm">Dishes</span>
+            <Link href="#"><div className="flex items-center hoverOpacity">
+              <span className="font-bold text-sm ">Dishes</span>
               <span className="text-2xl ml-2">
                 <GrNext />
               </span>
