@@ -9,16 +9,10 @@ import { FaInstagram } from "react-icons/fa";
 export default function Nav() {
     const pathname = usePathname();
     const menuItems = [
-      "Profile",
-      "Dashboard",
-      "Activity",
-      "Analytics",
-      "System",
-      "Deployments",
-      "My Settings",
-      "Team Settings",
-      "Help & Feedback",
-      "Log Out",
+      "Work",
+      "About",
+      "Contact",
+      
     ];
     return (
 
@@ -30,27 +24,27 @@ export default function Nav() {
         <NavbarContent className="sm:hidden pr-3" justify="center">
           <NavbarBrand>
         
-            <p className="font-bold text-inherit">ACME</p>
+            <p className="font-bold text-inherit text-lg">TEST NAME</p>
           </NavbarBrand>
         </NavbarContent>
   
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           <NavbarBrand>
       
-            <p className="text-slate-600 text-lg font-semibold">Todor Cholakov</p>
+            <p className="text-slate-600  text-lg font-semibold">Test name</p>
           </NavbarBrand>
           <NavbarItem>
-            <Link color="foreground" href="/" className={pathname  === "/" ? "active" : ""}>
+            <Link color="foreground" href="/" className={pathname  === "/" ? "active text-sm" : "text-sm"}>
               Work
             </Link>
           </NavbarItem>
           <NavbarItem>
-          <Link color="foreground" href="/about" className={pathname  === "/about" ? "active" : ""}>
+          <Link color="foreground" href="/about" className={pathname  === "/about" ? "active text-sm" : "text-sm"}>
               About
             </Link>
           </NavbarItem>
           <NavbarItem>
-          <Link color="foreground" href="/contact" className={pathname  === "/contact" ? "active" : ""}>
+          <Link color="foreground" href="/contact" className={pathname  === "/contact" ? "active text-sm" : "text-sm"}>
               Contact
             </Link>
           </NavbarItem>

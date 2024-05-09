@@ -5,6 +5,8 @@ import { NextUIProvider } from "@nextui-org/react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import '@fontsource-variable/montserrat';
+import '@fontsource-variable/raleway';
+import '@fontsource-variable/cinzel';
 
 
 
