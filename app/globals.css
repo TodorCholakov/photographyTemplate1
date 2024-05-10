@@ -15,7 +15,7 @@ body {
   left: 0; /* Align it with the left edge of the link */
   bottom: -3px; /* Move it slightly below the link */
   width: 100%; /* Make it span the full width */
-  height: 2px; /* Set the height of the underline */
+  height: 1px; /* Set the height of the underline */
   background-color: rgb(38 38 38); /* Set the color of the underline */
 }
 
