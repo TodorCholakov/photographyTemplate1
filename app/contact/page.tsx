@@ -14,7 +14,7 @@ export default function Contact() {
       <div className=" w-[1024px] justify-left p-6  ">
         <div className="w-96 text-xl mb-8">
           <p className="paragrahB text-sm">
-          Greetings! I'm here to bring your vision to life through personalized photography. Whether it's a special event, portrait session, or creative project, I'm all ears. Drop me a message below, and let's craft unforgettable moments together.
+          Greetings! I am here to bring your vision to life through personalized photography. Whether it is a special event, portrait session, or creative project, I am all ears. Drop me a message below, and let craft unforgettable moments together.
           </p>
         </div>
         <form className="max-w-xl text-sm mt-4 ">
