@@ -1,10 +1,16 @@
+"use client"
 import { Button } from "@nextui-org/react";
 import {pageAnimation} from "../../animation"
-
+import {motion} from "framer-motion"
 
 export default function Contact() {
   return (
-    <div className="flex w-full justify-center">
+    <motion.div 
+    variants={pageAnimation} 
+    initial="hidden" 
+    animate="show"
+    exit="exit" 
+    className="flex w-full justify-center">
       <div className=" w-[1024px] justify-left p-6  ">
         <div className="w-96 text-xl mb-8">
           <p className="paragrahB text-sm">
@@ -59,12 +65,12 @@ export default function Contact() {
             color="default"
             variant="bordered"
             radius="none"
-            className="border mt-2 p-2 w-48"
+            className="border mt-2 p-2 w-48 font-semibold"
           >
-            Sent
+            Send
           </Button>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 }

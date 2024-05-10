@@ -25,13 +25,13 @@ export default function Nav() {
 
       <NavbarContent className="sm:hidden pr-3" justify="center">
         <NavbarBrand>
-          <p className="font-bold text-inherit text-lg">TEST NAME</p>
+        <Link href="/" className="text-slate-600  text-lg font-semibold">Test name</Link>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarBrand>
-          <p className="text-slate-600  text-lg font-semibold">Test name</p>
+          <Link href="/" className="text-slate-600  text-lg font-semibold">Test name</Link>
         </NavbarBrand>
         <NavbarItem>
           <Link
@@ -79,8 +79,33 @@ export default function Nav() {
 
       <NavbarMenu>
         <NavbarMenuItem>
-          <Link href="#" size="lg">
+          <Link
+            href="/work"
+            size="lg"
+            color="foreground"
+            className={pathname.includes("/work") ? "active text-sm" : "text-sm"}
+          >
             Work
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link
+            href="/about"
+            size="lg"
+            color="foreground"
+            className={pathname === "/about" ? "active text-sm" : "text-sm"}
+          >
+            About
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link
+            href="/contact"
+            size="lg"
+            color="foreground"
+            className={pathname === "/contact" ? "active text-sm" : "text-sm"}
+          >
+            Contact
           </Link>
         </NavbarMenuItem>
       </NavbarMenu>

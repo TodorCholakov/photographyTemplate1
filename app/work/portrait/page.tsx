@@ -1,9 +1,17 @@
+"use client"
 import { GrNext } from "react-icons/gr";
 import Link from "next/link";
+import {pageAnimation} from "../../../animation"
+import {motion} from "framer-motion"
 
 const Portrait = () => {
   return (
-    <main className="flex w-full  justify-center">
+    <motion.div
+    variants={pageAnimation} 
+    initial="hidden" 
+    animate="show"
+    exit="exit" 
+    className="flex w-full  justify-center">
       <div className="w-[1024px] flex flex-wrap justify-center p-6">
         <div className="max-w-[472px] h-[600px] bg-slate-400 m-2">
           <div className="w-full h-[600px]">
@@ -67,7 +75,7 @@ const Portrait = () => {
           </div>
         </div>
       </div>
-    </main>
+    </motion.div>
   );
 };
 

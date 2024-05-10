@@ -10,7 +10,7 @@ const Footer = () => {
           (555) 555-5555
         </div>
         <div className="text-sm p-1">Copyright © 2024 - All right reserved</div>
-        <Link className="hoverOpacity grayscale hover:grayscale-0" href="https://www.petitstudioart.com/">
+        <Link className="hoverOpacity grayscale hover:grayscale-0 opacity-50 hover:opacity-100" href="https://www.petitstudioart.com/">
           <Image className="" width={30} height={30} src="/petit.svg" />
         </Link>
       </div>
