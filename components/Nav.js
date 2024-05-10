@@ -18,12 +18,12 @@ export default function Nav() {
   const pathname = usePathname();
   const menuItems = ["Work", "About", "Contact"];
   return (
-    <Navbar disableAnimation isBordered>
+    <Navbar disableAnimation isBordered className="">
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle />
       </NavbarContent>
 
-      <NavbarContent className="sm:hidden pr-3" justify="center">
+      <NavbarContent className="sm:hidden pr-3 " justify="center">
         <NavbarBrand>
         <Link href="/" className="text-slate-600  text-lg font-semibold">Test name</Link>
         </NavbarBrand>
@@ -38,7 +38,7 @@ export default function Nav() {
             color="foreground"
             href="/work"
             className={
-              pathname.includes("/work") ? "active text-sm" : "text-sm"
+              pathname.includes("/work") ? "active text-sm font-medium" : "text-sm font-medium"
             }
           >
             Work
@@ -48,7 +48,7 @@ export default function Nav() {
           <Link
             color="foreground"
             href="/about"
-            className={pathname === "/about" ? "active text-sm" : "text-sm"}
+            className={pathname === "/about" ? "active text-sm font-medium" : "text-sm font-medium"}
           >
             About
           </Link>
@@ -57,7 +57,7 @@ export default function Nav() {
           <Link
             color="foreground"
             href="/contact"
-            className={pathname === "/contact" ? "active text-sm" : "text-sm"}
+            className={pathname === "/contact" ? "active text-sm font-medium" : "text-sm font-medium"}
           >
             Contact
           </Link>
